@@ -20,7 +20,13 @@ body {
     background-color: transparent;
     z-index: 1000; /* Ensure the navbar stays on top of other elements */
 }
-
+.clickable-image {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.clickable-image:hover {
+  transform: scale(1.05);
+}
 
 .logo {
     padding: 0 5vw; /* Use viewport width for responsive padding */
@@ -216,7 +222,7 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -228,23 +234,24 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .placeholder {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 150px;
-  background-color: #e0e0e0;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  color: rgb(140, 136, 136);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
-  font-size: 24px;
-  color: #666;
+  text-align: center;
+  padding: 20px;
 }
 
 .project-item h3 {
@@ -269,136 +276,67 @@ body {
       grid-row: span 1;
   }
 }
-
-
-/* Contact Section */.contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.contact-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-}
-
-.contact-img img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.contact {
-  padding: 50px 0;
-  background: #f9f9f9;
-}
-
-.contact-heading {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contact-content {
+.contact-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0 20px;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
-.contact-info,
+.contact-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .contact-form {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  flex: 1 1 48%;
+  flex: 1;
 }
 
-.contact-info {
-  order: 1;
-}
-
-.contact-form {
-  order: 2;
-  align-self: flex-start;
-}
-
-.contact-info h2,
 .contact-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-top: 0;
   color: #333;
 }
 
-.contact-info p {
-  font-size: 16px;
-  margin: 10px 0;
-  color: #555;
-}
-
-.contact-form .form-group {
-  margin-bottom: 15px;
+.contact-form form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form label {
-  display: block;
   margin-bottom: 5px;
-  font-size: 14px;
-  color: #333;
+  color: #666;
 }
 
-.contact-form input,
+.contact-form input, 
 .contact-form textarea {
-  width: 100%;
   padding: 10px;
-  font-size: 14px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #f9f9f9;
+  border-radius: 4px;
 }
 
 .contact-form button {
-  background: #007bff;
+  padding: 10px;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-size: 16px;
 }
 
 .contact-form button:hover {
-  background: #0056b3;
-}
-
-.contact-info .btn {
-  background: #007bff;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.contact-info .btn:hover {
-  background: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Footer Styles */
