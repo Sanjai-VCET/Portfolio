@@ -5,9 +5,20 @@
 	<meta charset="UTF-8"> 
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0"> 
-	<title>My Portfolio</title> 
+	<title>Sanjai Navaneetha Krishnan - Portfolio</title> 
+	<meta name="description" content="Portfolio of Sanjai Navaneetha Krishnan - A passionate web developer and designer from India specializing in UI/UX design, web development, and digital solutions.">
+	<meta name="keywords" content="web developer, UI/UX designer, portfolio, Sanjai Navaneetha Krishnan, web design, frontend developer">
+	<meta name="author" content="Sanjai Navaneetha Krishnan">
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/feature/logo-black.png">
+	
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	
 	<link rel="stylesheet" href="styles.css"> 
 	<link rel="stylesheet" href="responsive.css"> 
+	
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E3ZDHTNN4"></script>
 <script>
@@ -23,57 +34,56 @@
 	<!-- Navbar header section -->
 
 	<header class="header"> 
-		<nav class="navbar"> 
+		<nav class="navbar" role="navigation" aria-label="Main navigation"> 
 			<div class="logo"> 
-				<h2 class="logo-heading" >Sanjai Navaneetha Krishnan</h2> 
+				<h2 class="logo-heading">Sanjai Navaneetha Krishnan</h2> 
 			</div> 
-			<div class="hamburger" id="hamburger"> 
-				<i class="fas fa-bars hamburger-icon"></i> 
-				<i class="fas fa-times cross-icon"></i> 
+			<div class="hamburger" id="hamburger" aria-label="Toggle navigation menu"> 
+				<i class="fas fa-bars hamburger-icon" aria-hidden="true"></i> 
+				<i class="fas fa-times cross-icon" aria-hidden="true"></i> 
 			</div> 
 			<div class="menu"> 
-				<ul class="menu-list"> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#home" style="color: black;"> 
+				<ul class="menu-list" role="menubar">
+					<li class="menu-list-items" role="none"> 
+						<a class="links" href="#home" style="color: black;" role="menuitem"> 
 							Home 
 						</a> 
 					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#portfolio"style="color: black;"> 
+					<li class="menu-list-items" role="none"> 
+						<a class="links" href="#portfolio" style="color: black;" role="menuitem"> 
 							Portfolio 
 						</a> 
 					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#about"style="color: black;"> 
+					<li class="menu-list-items" role="none"> 
+						<a class="links" href="#about" style="color: black;" role="menuitem"> 
 							About 
 						</a> 
 					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#projects"style="color: black;"> 
+					<li class="menu-list-items" role="none"> 
+						<a class="links" href="#projects" style="color: black;" role="menuitem"> 
 							Projects
 						</a> 
 					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#contact"style="color: black;"> 
+					<li class="menu-list-items" role="none"> 
+						<a class="links" href="#contact" style="color: black;" role="menuitem"> 
 							Contact Me 
 						</a> 
-					</li> 
+					</li>
 				</ul> 
 			</div> 
 		</nav> 
 	</header>
 
-
-
+	<main>
 	<!-- Main hero banner -->
 
 	<section id="home" class="hero" style="margin:0 10px;"> 
 		<div class="intro"> 
 			          
 			<div class="headings"> 
-				<h3 class="greet-heading"style="font-size: 48px;">Hello, I'm</h3> 
-				<h1 class="my-heading"style="font-size: 64px;">Sanjai Navaneetha Krishnan</h1> 
-				<h2 class="sub-heading" style="color:ivory;font-size:30px;">  A passionate developer and designer from India.</h2> 
+				<h3 class="greet-heading" style="font-size: 48px;">Hello, I'm</h3> 
+				<h1 class="my-heading" style="font-size: 64px;">Sanjai Navaneetha Krishnan</h1> 
+				<h2 class="sub-heading" style="color:ivory;font-size:30px;">A passionate developer and designer from India.</h2>
             
 			</div> 			
 			<div class="intro-buttons"> 
@@ -172,10 +182,10 @@
     <h1 class="my-heading text-center">My Projects</h1>
     <div class="projects-container">
         <div class="project-item">
-            <div class="placeholder"><img src="tictactoe.jpeg" style="background-image: url(tictactoe.jpeg);cursor: pointer;"></div>
+            <div class="placeholder"><img src="tictactoe.jpeg" alt="Tic Tac Toe game screenshot" style="background-image: url(tictactoe.jpeg);cursor: pointer;"></div>
             <h3>Tic Tac Toe</h3>
             <p>A web-based Tic-Tac-Toe game using HTML, CSS, and JavaScript. It offers a clean interface for two players to take turns, with automatic tracking of game status and results.</p>
-            <a href="https://sanjaiweb.github.io/tic-tac-toe/" target="_blank;"style=" padding: 10px;background-color:DodgerBlue;color:white;text-decoration:none;">Click To Visit</a>
+            <a href="https://sanjaiweb.github.io/tic-tac-toe/" target="_blank" style="padding: 10px;background-color:DodgerBlue;color:white;text-decoration:none;">Click To Visit</a>
             </div>
         
         <div class="project-item big">
@@ -206,13 +216,13 @@
     </div>
 </section>
 
-<section class="contact-section">
+<section id="contact" class="contact-section">
     <div class="contact-image">
         <img src="images/contact/Designer (1).png" alt="Contact Us">
     </div>
     <div class="contact-form">
         <h2>Contact Us</h2>
-        <form action="/submit" method="post">
+        <form name="submit-to-google-sheet" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -223,6 +233,7 @@
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Send Message</button>
+            <div id="msg" class="form-message" aria-live="polite"></div>
         </form>
     </div>
 </section>
@@ -234,33 +245,27 @@
 
 
 
+	</main>
 
-
-	
 	<!-- Footer section -->
 	<footer class="footer" style="display: flex;flex-wrap: wrap; align-self: center;"> 
 		<div class="footer-content" style="align:center"> 
-			<div class="info" >
-				<a href="#"><img src="images/feature/logo-black.png"  class="logo"alt="" style="left:0"></a>
-				<h3>     Address : </h3>
-				<p>   Solaimalai Garden , Gandhi nagar last </p>
-			    <p>   Y.Othakadai ,Madurai-625107,TamilNadu </p>
-				
-			 </div>
+			<div class="info">
+				<a href="#home"><img src="images/feature/logo-black.png" class="logo" alt="Sanjai Navaneetha Krishnan Logo" style="left:0"></a>
+				<h3>Address:</h3>
+				<p>Solaimalai Garden, Gandhi nagar last</p>
+			    <p>Y.Othakadai, Madurai-625107, TamilNadu</p>
+			</div>
 			
-		
-					
-			</div> 	
-			
+		</div>
 		
 		<div style="text-align: center; align-self:last baseline;"> 
-				
-				<h4>
+			<h4>
 				Copyright © 2024 All rights reserved | 
-				This portfolio website  is created 
+				This portfolio website is created 
 				by Sanjai Navaneetha Krishnan. 
-				</h4>
-			</div> 
+			</h4>
+		</div>
 	
 	</footer> 
 
