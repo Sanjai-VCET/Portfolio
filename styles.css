@@ -500,7 +500,7 @@ input[type="submit"]:hover {
 }
 
 .btn1:active {
-    scale: 0.92;
+    transform: scale(0.92);
 }
 
 .btn1:hover {
@@ -680,7 +680,7 @@ input[type="submit"]:hover {
 
 .card1:hover {
   cursor: pointer;
-  scale: 1.1;
+  transform: scale(1.1);
   background-color: #cc39a4;
 }
 
@@ -690,7 +690,7 @@ input[type="submit"]:hover {
 
 .card2:hover {
   cursor: pointer;
-  scale: 1.1;
+  transform: scale(1.1);
   background-color: #03A9F4;
 }
 
@@ -700,7 +700,7 @@ input[type="submit"]:hover {
 
 .card3:hover {
   cursor: pointer;
-  scale: 1.1;
+  transform: scale(1.1);
   background-color: black;
 }
 
@@ -710,7 +710,7 @@ input[type="submit"]:hover {
 
 .card4:hover {
   cursor: pointer;
-  scale: 1.1;
+  transform: scale(1.1);
   background-color: #8c9eff;
 }
 
